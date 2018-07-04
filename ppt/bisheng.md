@@ -120,9 +120,8 @@ date: 2018年6月7号
 
 # collector
 
-# ![collector](../img/bisheng-collector-0704.png)
-
-# ![use-collector](.../img/collect-use-0704.png)
+<img src='../img/bisheng-collector-0704.png' alt='bisheng-collector-0704' style='width: 400px'/>
+<img src='../img/collect-use-0704.png' alt='collect-use-0704' style='width: 400px'/>
 
 
 [slide]
@@ -195,39 +194,14 @@ date: 2018年6月7号
 
 # 5) markdown props
 
-- source-data-loader
-
-// todo 
+- 使用source-data-loader去加载markdownData
 
 [slide]
 
-# 6）export 
+# 5.1 source-data-loader
 
-# ![process](../img/bisheng-data-loader-export.png)
-
-[slide]
-
-# sourceData.stringify
-
-# ![process](../img/stringify.png)
-
-[slide]
-
-# source-loader
-
-# ![process](../img/soure-loader.png)
-
-[slide]
-
-# work task 
-
-# ![process](../img/work-task.png)
-
-[slide]
-
-# sourceData process 
-
-# ![process](../img/process.png)
+- transformer：将markdown => jsonml
+- plugin: 增强jsonml
 
 [slide]
 
@@ -235,14 +209,14 @@ date: 2018年6月7号
 
 md => ast => jsonml
 
-<img src='../img/hello-world-md.png' alt='hello-world-md' style='width: 350px'/>
-<img src='../img/md-data-props.png' alt='md-data-props' style='height: 250px'/>
+<img src='../img/react-md.png' alt='react-md' style='width: 350px'/>
+<img src='../img/react-jsonml.png' alt='react-jsonml' style='height: 250px'/>
 
 [slide]
 
-# markdownTransformer
+# 6）export 
 
-# ![markdownTransformer](../img/markdownTransformer.png)
+# ![process](../img/bisheng-data-loader-export.png)
 
 [slide]
 
@@ -262,7 +236,7 @@ md => ast => jsonml
 
 # part3: 后续处理
 
-# ![webpack-after](../img/webpack-after.png)
+- 根据markdownTree, 生成html文件
 
 [slide]
 
@@ -302,7 +276,6 @@ md => ast => jsonml
 <img src='../img/react-hello-world.png' alt='build-log' style='width: 420px'/>
 
 [slide]
-
 
 # browser
 

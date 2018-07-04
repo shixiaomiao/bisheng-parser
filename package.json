@@ -8,9 +8,7 @@
     "ppt": "nodeppt start -w -p 8090 -d ./ppt",
     "start": "bisheng start",
     "deploy": "bisheng gh-pages --ssr && rm -rf _site",
-    "bs-1": "node ./test/build/part1.js",
-    "bs-2": "node ./test/build/part2.js",
-    "bs-build": "bisheng build --ssr"
+    "bs-build": "bisheng build"
   },
   "keywords": [],
   "author": "",
