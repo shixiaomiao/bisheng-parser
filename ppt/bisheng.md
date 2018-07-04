@@ -106,106 +106,102 @@ date: 2018年6月7号
 
 # routes.index.js
 
-# ![big-picture](../img/routes-code.png)
+- 提供routes(ur: component对应关系) （theme配置）
+- 将markdown生成的props属性注入到component中（utils/data）
 
 [slide]
 
-# templateWrapper
+# 注入
 
-# ![big-picture](../img/templateWrapper.png)
-
+- 使用数据：collector
+- 数据源：utils/data
 
 [slide]
 
-# routes.index.js
+# collector
 
-- routes
-- markdown + component template => full component
+# ![collector](../img/bisheng-collector-0704.png)
+
+# ![use-collector](.../img/collect-use-0704.png)
+
 
 [slide]
 
 # utils/data
 
-# ![big-picture](../img/util-data.png)
+- markdown的props
+- plugins
+- picked
 
 [slide]
 
-# 疑问？
+# 空文件
 
-1) utils/data 模块为空？ 数据从哪里来的？
-2) createElement 中dynamicPropsKey 是怎么挂载在Component上的？
-3) Component[dynamicPropsKey] 
+- webpack loader的形式将数据在打包过程中注入
+
+# ![big-picture](../img/util-data.png)
+
 
 [slide]
 
 # part2: webpack
 
-- 获取webpackConfig
-- 执行webpack
- 
-[slide]
- 
-# 2.1 获取webpackConfig
- 
-- getWebpackConfig
-- updateWebpackConfig
-- plugins
- 
-[slide]
-
-# 2.1.2 updateWebpackConfig
-
-# ![big-picture](../img/updateWebpackConfig.png)
+- bisheng-data-loader
+- source-loader
 
 [slide]
 
-# 2.1.2-1 bisheng-data-loader
+# bisheng-data-loader
 
-# ![big-picture](../img/bisheng-data-loader.png)
-
-[slide]
-
-# 2.1.2-1 bisheng-data-loader
+### 主要作用：loader utils/data 模块
 
 - themConfig
 - markdown tree
 - plugins 系统
 - theme pick
+- markdown props
 - export
 
 [slide]
 
-# 2.1.2-1.1 themeConfig
+# 1）themeConfig
 
-# ![big-picture](../img/getThemeConfig.png)
-
+- 加载themeConfig信息
+- 默认加载一个bisheng-plugin-hightlight的插件
 
 [slide]
 
-# 2.1.2-1.2 markdown tree
+# 2）markdown tree
 
 # ![md-tree](../img/md-tree.png)
 
 
 [slide]
 
-# 2.1.2-1.3 plugins 系统
+# 3）plugins 系统
 
 # ![md-tree](../img/plugin-system-1.png)
 
 [slide]
 
-# ![md-tree](../img/resolve-plugin.png)
+# 4）plugin-example
 
-[slide]
-
-# plugin-example
+- 解析plugin的具体地址
+- 解析plugin的配置信息(以query的形式)
 
 # ![md-tree](../img/plugin-example.png)
 
 [slide]
 
-# 2.1.2-1.5 export 
+# 5) markdown props
+
+- source-data-loader
+
+// todo 
+
+[slide]
+
+# 6）export 
 
 # ![process](../img/bisheng-data-loader-export.png)
 
