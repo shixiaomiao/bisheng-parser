@@ -26,9 +26,9 @@ date: 2018年6月7号
 
 [slide]
 
-# bisheng VS theme
+# bisheng 之 theme
 
-- theme提供SPA的component
+- theme提供SPA的component模板
 - theme提供SPA的routes
 - 其他（plugin、lazyLoad...）
 
@@ -75,6 +75,12 @@ date: 2018年6月7号
 
 # ![tmp-build](../img/build-tmp-0703.png)
 
+[slide]
+
+# entry.index.js
+
+- 根据routes生成react-router的单页应用
+- createElement: 为组件注入markdown props
 
 [slide]
 
@@ -82,24 +88,12 @@ date: 2018年6月7号
 
 # ![entry-index](../img/entry.index.png)
 
-[slide]
-
-# entry.index.js
-
-# ![build-entry](../img/build-entry-0703.png)
 
 [slide]
 
 # createElement
 
 # ![entry-index](../img/create-element.png)
-
-[slide]
-
-# entry.index.js
-
-- 根据routes生成react-router的单页应用
-- createElement: 为组件注入markdown props
 
 
 [slide]
@@ -163,27 +157,27 @@ date: 2018年6月7号
 
 [slide]
 
-# 1）themeConfig
+# 1、themeConfig
 
 - 加载themeConfig信息
 - 默认加载一个bisheng-plugin-hightlight的插件
 
 [slide]
 
-# 2）markdown tree
+# 2、markdown tree
 
 # ![md-tree](../img/md-tree.png)
 
 
 [slide]
 
-# 3）plugins 系统
+# 3、plugins 系统
 
 # ![md-tree](../img/plugin-system-1.png)
 
 [slide]
 
-# 4）plugin-example
+# 3.1 plugin-example
 
 - 解析plugin的具体地址
 - 解析plugin的配置信息(以query的形式)
@@ -192,20 +186,20 @@ date: 2018年6月7号
 
 [slide]
 
-# 5) markdown props
+# 4、 markdown props
 
 - 使用source-data-loader去加载markdownData
 
 [slide]
 
-# 5.1 source-data-loader
+# 4.1 source-data-loader
 
 - transformer：将markdown => jsonml
 - plugin: 增强jsonml
 
 [slide]
 
-# markdownTransformer
+# 4.1.1 markdownTransformer
 
 md => ast => jsonml
 
@@ -214,7 +208,7 @@ md => ast => jsonml
 
 [slide]
 
-# 6）export 
+# 5、export 
 
 # ![process](../img/bisheng-data-loader-export.png)
 
@@ -231,6 +225,13 @@ md => ast => jsonml
 
 <img src='../img/bs-data-loader.png' alt='build-log' style='width: 320px'/>
 <img src='../img/md-data-props.png' alt='build-result' style='height: 300px'/>
+
+[slide]
+
+# utils/data的生成过程
+
+# ![data-loader-conclusion](../img/data-loader-conclusion.png)
+
 
 [slide]
 
@@ -255,6 +256,26 @@ md => ast => jsonml
 
 [slide]
 
+# 演示
+
+[slide]
+
+# react-plugin-result(browser)
+
+# ![react-plugin-result-b](../img/react-plugin-result-b.png)
+
+[slide]
+
+# react-plugin-result(node)
+
+<img src='../img/react-route-1.png' alt='build-log' style='width: 420px'/>
+<img src='../img/react-plugin-source.png' alt='build-log' style='width: 420px'/>
+<img src='../img/react-plugin-result.png' alt='build-log' style='width: 420px'/>
+<img src='../img/react-hello-world.png' alt='build-log' style='width: 420px'/>
+
+
+[slide]
+
 # 🌰 bisheng-plugin-react
 
 - node
@@ -268,25 +289,11 @@ md => ast => jsonml
 
 [slide]
 
-# react-plugin-result(node)
-
-<img src='../img/react-route-1.png' alt='build-log' style='width: 420px'/>
-<img src='../img/react-plugin-source.png' alt='build-log' style='width: 420px'/>
-<img src='../img/react-plugin-result.png' alt='build-log' style='width: 420px'/>
-<img src='../img/react-hello-world.png' alt='build-log' style='width: 420px'/>
-
-[slide]
-
 # browser
 
 # ![react-plugin-b-content](../img/react-plugin-b-content.png)
 
 
-[slide]
-
-# react-plugin-result(browser)
-
-# ![react-plugin-result-b](../img/react-plugin-result-b.png)
 
 [slide]
 
