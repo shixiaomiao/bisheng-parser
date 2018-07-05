@@ -312,8 +312,11 @@ md => ast => jsonml
 
 总结:
 
-- webpack loader
-- plugin 
+- webpack loader非常规划使用
+- boss/work
+- 数据源的联通：collector
+- 工具箱：utils 
+- plugin (browser/node)
 
 
 [slide]
@@ -321,3 +324,7 @@ md => ast => jsonml
 - bisheng: https://github.com/benjycui/bisheng 
 - 如何编写一个 loader： https://webpack.docschina.org/contribute/writing-a-loader/
 - bisheng解读： https://github.com/liangklfangl/bisheng-sourceCode-plugin
+
+[slide]
+
+# Q & A
